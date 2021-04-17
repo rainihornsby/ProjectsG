@@ -1,3 +1,4 @@
+// all the stats for every character go in here
 var gameManager = {
     setGameStart: function(classType){
         // this one method runs the two methods() on line 7 and 40 , so that I can put setGameStart on my onclick and have it run both methods
@@ -11,16 +12,16 @@ var gameManager = {
             // classType, vitality, mana, energy, strength, intelligence, agility, speed
         switch (classType) {
             case "Knight":
-                player = new Player(classType, 1500, 1, 1, 800, 1, 500, 500);
+                player = new Player(classType, 1000, 0, 100, 100, 0, 100, 100);
                 break;
             case "Priest":
-                player = new Player(classType, 750, 1000, 1, 1, 900, 200, 500);
+                player = new Player(classType, 1000, 100, 0, 0, 100, 100, 100);
                 break;
             case "Hunter":
-                player = new Player(classType, 1000, 400, 300, 800, 400, 600, 700);
+                player = new Player(classType, 1000, 0, 100, 100, 0, 100, 100);
                 break;
             case "Wizard":
-                player = new Player(classType, 750, 1500, 1, 1, 1000, 200, 500);
+                player = new Player(classType, 1000, 100, 0, 0, 100, 100, 100);
                 break;
         // default only runs if nothing in this object is selected. ie. could run an error message and reset the page
             // default:
@@ -31,7 +32,7 @@ var gameManager = {
         
         var getInterface = document.querySelector(".interface");
         getInterface.innerHTML = '<img src="/characters/' + classType.toLowerCase() + 
-        '.png" class="characterImg"><div><h3>' + classType + '</h3><p>Vitality: ' + player.vitality 
+        '.png" class="characterImg"><div><h3>' + classType + '</h3><p class="playerVitality">Vitality: ' + player.vitality 
         + '</p><p>Mana: ' + player.mana + '</p><p>Energy: ' + player.energy + '</p><p>Strength: ' + player.strength 
         +'</p><p>Intelligence: ' + player.intelligence + '</p><p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div>';
         // this is the title for the character after you select one as well as the stats of each indiviual object
@@ -66,12 +67,12 @@ var gameManager = {
     // what I choose to name these has to be the same as in the files on my computer or it will not work right
     // ie. when '<img src="/gameBasics/monsters/' on line 102 look in my monsters folder. whatever picture is named Necromancer will represent "Necromancer" ect.
     // classType, vitality, mana, energy, strength, intelligence, agility, speed
-        let enemy00 = new Enemy("Necromancer", 900, 1200, 1, 1, 800, 250, 250);
-        let enemy01 = new Enemy("Horror", 600, 1, 100, 200, 1, 600, 800);
-        let enemy02 = new Enemy("Undead Behemoth", 1500, 1, 1, 700, 1, 200, 300);
-        let enemy03 = new Enemy("Phosphorus Ghost", 500, 700, 1, 400, 300, 300, 900);
-        let enemy04 = new Enemy("Skeleton", 700, 1, 300, 300, 1, 250, 250);
-        let enemy05 = new Enemy("Undead Knight", 1100, 1, 500, 800, 1, 300, 400);
+        let enemy00 = new Enemy("Necromancer", 1000, 100, 0, 0, 100, 100, 150);
+        let enemy01 = new Enemy("Horror", 1000, 0, 100, 100, 0, 100, 75);
+        let enemy02 = new Enemy("Undead Behemoth", 1000, 0, 100, 100, 0, 100, 150);
+        let enemy03 = new Enemy("Phosphorus Ghost", 1000, 100, 0, 0, 100, 100, 75);
+        let enemy04 = new Enemy("Skeleton", 1000, 0, 100, 100, 0, 100, 150);
+        let enemy05 = new Enemy("Undead Knight", 1000, 0, 100, 100, 0, 100, 75);
         
         // this method is how I get the random numbers needed for damage, healing ect.
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6));
@@ -100,9 +101,9 @@ var gameManager = {
             // I'm taking var enemy from enemy.js so I can use the method I made there, and saying it equals the stats I listed on lines 65 - 70
             }
             getHeader.innerHTML = '<p>Task: choose your move</p>';
-            getActions.innerHTML = '<a href="# class="btnPrefight" onclick="PlayerMoves.calcAttack()">Attack</a>'
+            getActions.innerHTML = '<a href="# class="btnPrefight" onclick="playerMoves.calcAttack()">Attack</a>'
             getEnemy.innerHTML = '<img src="/monsters/' + enemy.enemyType.toLowerCase() + 
-            '.png" class="characterImg"><div><h3>' + enemy.enemyType + '</h3><p>Vitality: ' + enemy.vitality 
+            '.png" class="characterImg"><div><h3>' + enemy.enemyType + '</h3><p class="enemyVitality">Vitality: ' + enemy.vitality 
             + '</p><p>Mana: ' + enemy.mana + '</p><p>Energy: ' + enemy.energy + '</p><p>Strength: ' + enemy.strength 
             +'</p><p>Intelligence: ' + enemy.intelligence + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';;
         }
