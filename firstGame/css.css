@@ -1,39 +1,39 @@
 html {
     font-family: 'Pacifico', cursive;
+    background: black;
     
+}
+
+.forest {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .interface {
     display: flex;
     align-content: center;
     justify-content: center;
-}
-
-.player {
-    background: magenta;
-    border: black .1em solid;
-    height: 5em;
-    width: 5em;
+    font-size: .75em;
 }
 
 .enemy {
-    background: crimson;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
 .characterImg {
-    height: 10em;
+    height: 5em;
     justify-content: center;
     align-content: center;
     transform: translate(0em, 7em);
 }
 
 .enemyImg {
-    height: 20em;
+    height: 10em;
     justify-content: center;
-    transform: translate(0em, 1.5em);
+    transform: translate(0em, 4.5em);
 }
 
 a {
@@ -44,12 +44,17 @@ a {
     justify-content: center;
 } 
 
+.fightHeader {
+    text-align: center;
+}
+
 h2 {
     text-align: center;
 }
 
 h3 {
     color: rgb(0, 0, 0);
+    text-decoration: underline rgb(92, 3, 175);
 }
 
 .p {
@@ -64,7 +69,30 @@ h3 {
 
 .playerClass {
     text-align: center;
-    text-decoration: underline red;
+}
+
+.knight {
+    border: .6em ridge rgb(228, 3, 3);
+    width: 20%;
+    margin: 5em 3em 5em 5em;
+}
+
+.priest {
+    border: .6em ridge rgb(247, 247, 247);
+    width: 20%;
+    margin: 5em 3em 5em 0em;
+}
+
+.hunter {
+    border: .6em ridge rgb(6, 161, 45);
+    width: 20%;
+    margin: 5em 3em 5em 0em;
+}
+
+.wizard {
+    border: .6em ridge rgb(0, 174, 255);
+    width: 20%;
+    margin: 5em 3em 5em 0em;
 }
 
 .playerVitality {
@@ -109,8 +137,54 @@ h3 {
     margin: 0em;
 }
 
-.arena {
+/* .arena {
     display: grid;
     grid-template-areas:
       "";
+} */
+
+.enemyType {
+    text-align: center;
+}
+
+.enemyVitality {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.enemyMana {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.enemyEnergy {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.enemyStrength {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.enemyIntelligence {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.enemyAgility {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.enemySpeed {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
 }

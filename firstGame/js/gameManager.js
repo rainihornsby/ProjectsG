@@ -103,9 +103,9 @@ var gameManager = {
             getHeader.innerHTML = '<p class=""fightHeader">FIGHT!!</p>';
             getActions.innerHTML = '<a href="# class="btnPrefight" onclick="playerMoves.calcAttack()">Attack</a>'
             getEnemy.innerHTML = '<img src="/monsters/' + enemy.enemyType.toLowerCase() + 
-            '.png" class="enemyImg"><div><h3>' + enemy.enemyType + '</h3><p class="enemyVitality">Vitality: ' + enemy.vitality 
-            + '</p><p>Mana: ' + enemy.mana + '</p><p>Energy: ' + enemy.energy + '</p><p>Strength: ' + enemy.strength 
-            +'</p><p>Intelligence: ' + enemy.intelligence + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';;
+            '.png" class="enemyImg"><div><h3 class="enemyType">' + enemy.enemyType + '</h3><p class="enemyVitality">Vitality: ' + enemy.vitality 
+            + '</p><p class="enemyMana">Mana: ' + enemy.mana + '</p><p class="enemyEnergy">Energy: ' + enemy.energy + '</p><p class="enemyStrength">Strength: ' + enemy.strength 
+            +'</p><p class="enemyIntelligence">Intelligence: ' + enemy.intelligence + '</p><p class="enemyAgility">Agility: ' + enemy.agility + '</p><p class="enemySpeed">Speed: ' + enemy.speed + '</p></div>';;
         }
     // this is the setFight Method that will be attached to the button I made in line 49. attached via on
 

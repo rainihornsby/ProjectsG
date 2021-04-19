@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "firstGame",
+			"path": ".."
+		},
+		{
+			"name": "jQuery",
+			"path": "../../../jQuery"
+		},
+		{
+			"name": "js",
+			"path": "../../../js"
+		},
+		{
+			"path": "../../../../Class_work/mod_1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "firstGame"
+	}
+}
