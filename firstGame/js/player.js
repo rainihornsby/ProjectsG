@@ -120,7 +120,7 @@ let getEnemyVitality = document.querySelector(".enemyVitality");
             }
             else {
                 getPlayerVitality.innerHTML = 'Health: ' + player.vitality;
-        // player attacks
+        // player attacks in return
                 let playerAttackValues = playerAttack();
                 let totalDamage = playerAttackValues[0] * playerAttackValues[1];
                 enemy.vitality = enemy.vitality - totalDamage;
