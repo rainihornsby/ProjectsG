@@ -38,7 +38,7 @@ html {
 
 a {
     text-shadow: rgb(178, 196, 178) 1em;
-    color: darkcyan;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     align-items: center;
     justify-content: center;
