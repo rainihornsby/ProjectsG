@@ -100,7 +100,7 @@ var gameManager = {
                 break;
             // I'm taking var enemy from enemy.js so I can use the method I made there, and saying it equals the stats I listed on lines 65 - 70
             }
-            getHeader.innerHTML = '<p class=""fightHeader">FIGHT!!</p>';
+            getHeader.innerHTML = '<p class="fightHeader">FIGHT!!</p>';
             getActions.innerHTML = '<a href="# class="btnPrefight" onclick="playerMoves.calcAttack()">Attack</a>'
             getEnemy.innerHTML = '<img src="/monsters/' + enemy.enemyType.toLowerCase() + 
             '.png" class="enemyImg"><div><h3 class="enemyType">' + enemy.enemyType + '</h3><p class="enemyVitality">Vitality: ' + enemy.vitality 
