@@ -46,7 +46,7 @@ var gameManager = {
         //here I'm just grabbing the classes/elements I need so i can add them to a method
 
         // this part is easier with single quotes
-        getHeader.innerHTML = '<p>Task: Find an enemy! </p>';
+        getHeader.innerHTML = '<p class="findEnemyHeader">Find an enemy! </p>';
         
         getActions.innerHTML = '<a href="# class="btnPrefight" onclick="gameManager.setFight()">Search for your opponent...</a>';
         // made ahead of time with an onclick event for the new method setFight()
