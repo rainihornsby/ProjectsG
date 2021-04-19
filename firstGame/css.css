@@ -1,0 +1,116 @@
+html {
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.interface {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.player {
+    background: magenta;
+    border: black .1em solid;
+    height: 5em;
+    width: 5em;
+}
+
+.enemy {
+    background: crimson;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.characterImg {
+    height: 10em;
+    justify-content: center;
+    align-content: center;
+    transform: translate(0em, 7em);
+}
+
+.enemyImg {
+    height: 20em;
+    justify-content: center;
+    transform: translate(0em, 1.5em);
+}
+
+a {
+    text-shadow: rgb(178, 196, 178) 1em;
+    color: darkcyan;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+} 
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+}
+
+.p {
+    text-align: center;
+    color: black;
+}
+
+.actions {
+    background: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.playerClass {
+    text-align: center;
+    text-decoration: underline red;
+}
+
+.playerVitality {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.playerMana {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.playerEnergy {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.playerStrength {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.playerIntelligence {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.playerAgility {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.playerSpeed {
+    text-align: center;
+    border: .1em solid black;
+    margin: 0em;
+}
+
+.arena {
+    display: grid;
+    grid-template-areas:
+      "";
+}
