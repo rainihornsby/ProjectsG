@@ -7,23 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <!-- can link all 3 app.js -->
     <script src="/js/gameManager.js"></script>
     <script src="/js/player.js"></script>
     <script src="/js/enemy.js"></script>
     <script src="/js/jquery.js"></script>
-    <title>Fight for your Life!</title>
     <link rel="shortcut icon" href="/personalityPics/dripping-sword_39207.ico">
+    <title>Fight for your Life!</title>
+    
 
-
-    <script>
-        $("document").ready(function(){
-            $(".interface").click(function(){
-                $(".characterImg").animate({slideUp: "50em"}, 3000)
-            })
-        });
-    </script>
+    
 </head>
 <body>
  
@@ -34,53 +28,41 @@
     </div>
     <!-- this will be where ever the character/character info is -->
     <div class="interface">
-        <a class="knight" href="#" onclick="gameManager.setGameStart('Knight')">
-            <img class="playerCharImg" src="/characters/knight.png" alt="Knight">
+        <!-- this connects to the setGameStart function -->
+        <a class="samurai" href="#" onclick="gameManager.setGameStart('Samurai')">
+            <img class="playerCharImg" src="/characters/samurai.png" alt="Samurai">
             <!-- info of the characters goes here -->
             <div>
-                <h3>Knight</h3>
+                <h3>Samurai</h3>
                 <p>
-                    Honorable and brave, a knight protects their allies and keeps the attention of the enemy. <br>
-                Specializing in heavy armor and weilding a sword and shield, this makes them very durable with a <br>
-                high vitaility strength, but low speed and agility. Prefers the thrill of the fight over casting or <br>
-                long range. 
+                    
                 </p>
             </div>
         </a>
 <!-- onclick can only run one method. a way around this is to make one method that run 2 methods in js -->
-        <a class="priest" href="#" onclick="gameManager.setGameStart('Priest')">
-            <img class="playerCharImg" src="/characters/priest.png" alt="Priest">
+        <a class="muffins" href="#" onclick="gameManager.setGameStart('Muffins')">
+            <img class="playerCharImg" src="/characters/muffins.png" alt="Muffins">
             <div>
-                <h3>Priest</h3>
+                <h3>Muffins</h3>
                 <p>
-                    Using their faith as their core strength, Priest burn their enemies with righteous fire as well as healing your allies in the <br>
-                    same breath. They are a great support, able to give supportive buffs that protect and heal allies. <br>
-                    Priest wear light armor making them very weak vs. physical attacks but can resist spells better then a heavier armor types. <br>
-                    They have high mana as well as an arsenal of supportive spells.
                 </p>
             </div>
         </a>
-        <a class="hunter" href="#" onclick="gameManager.setGameStart('Hunter')">
-            <img class="playerCharImg" src="/characters/hunter.png" alt="Hunter">
+        <a class="ranger" href="#" onclick="gameManager.setGameStart('Ranger')">
+            <img class="playerCharImg" src="/characters/ranger.png" alt="Ranger">
             <div>
-                <h3>Hunter</h3>
+                <h3>Ranger</h3>
                 <p>
-                    While using stealth and guile is prefered, Hunters are also a well rounded brawler type. They can disappear and reappear to deliver <br>
-                    massive damage from the shadows at range. They, for the most part prefer using a bow,  being a master of the craft it makes <br>
-                    them very deadly, but can also be a master of other weapons. Hunters wear meduim armor, give them some protection vs. phisical and vs. magical. Some have even <br>
-                    been known to know some simple magics to trick their enemy.
+
                 </p>
             </div>
         </a>
-        <a class="wizard" href="#" onclick="gameManager.setGameStart('Wizard')">
-            <img class="playerCharImg" src="/characters/wizard.png" alt="Wizard">
+        <a class="sorcerer" href="#" onclick="gameManager.setGameStart('Sorcerer')">
+            <img class="playerCharImg" src="/characters/sorcerer.png" alt="Sorcerer">
             <div>
-                <h3>Wizard</h3>
+                <h3>Sorcerer</h3>
                 <p>
-                    Often bizzare and missunderstood, Wizards are very intellegent masters of their craft. From the Elements, to Time and Space, <br>
-                    they do not use a phsical weapon, instead they cast powerful spells that decimate the enemy, leaving conditions on the ones <br>
-                    unlucky enough to survive their initial strike. Wizard wear light armor, making them very weak vs. phisical attacks but can <br>
-                    resist spells better. Wizards are the strongest with weilding offensive magic.
+
                 </p>
             </div>
         </a>

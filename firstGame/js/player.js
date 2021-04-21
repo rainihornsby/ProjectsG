@@ -1,4 +1,4 @@
-//dones not work with capital letters
+//does not like capital letters
 let player;
 
 function Player(classType, vitality, mana, energy, strength, intelligence, agility, speed) {
@@ -39,7 +39,7 @@ let playerAttack = function(){
     let calcOutputDamage = calcBaseDamage + offsetDamage
     // this will be how many times a player hits, in this game it is according to their agility
     let numberOfHits = Math.floor(Math.random() * Math.floor(player.agility / 10 ) / 2 ) + 1;
-    // this is equal to the array that will use calcOutputDamage and numberOfHits
+    // this is equal to the array that will use calcOutputDamage and numberOfHits, call on later
     let attackValues = [calcOutputDamage, numberOfHits];
     return attackValues
 
@@ -74,14 +74,15 @@ let getEnemyVitality = document.querySelector(".enemyVitality");
 // initiate attacks
 // this will say, if the players speed if greater than or equal to the enemy speed the player attacks first.
 // this means that if the players speed is EQUAL to the enemy the player goes first, if you take out the = the enemy will attack first if thir speeds are equal
-            if(getPlayerSpeed >= getEnemySpeed){
+            if(getPlayerSpeed > getEnemySpeed){
                 let playerAttackValues = playerAttack();
                 let totalDamage = playerAttackValues[0] * playerAttackValues[1];
                 enemy.vitality = enemy.vitality - totalDamage;
+                                  // this is from the array attackValues
                 alert("You Hit for " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times!")
             
             if(enemy.vitality <= 0){
-                alert("Congrats! ^.^")
+                alert("Congrats! ^.^ refresh to play again")
                 getPlayerVitality.innerHTML = 'Health: ' + player.vitality;
         // this will make it so that when the enemy runs out of health and you win, it won't show them with a negative number on their health bar (which could be kinda funny)
                 getEnemyVitality.innerHTML = 'Health: 0'
@@ -92,6 +93,7 @@ let getEnemyVitality = document.querySelector(".enemyVitality");
         
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+                // this changes the health when damage is done
                 player.vitality = player.vitality - totalDamage;
                 alert( "Enemy hit you for " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times!")
         }    
@@ -105,15 +107,15 @@ let getEnemyVitality = document.querySelector(".enemyVitality");
                 getPlayerVitality.innerHTML = 'Health: ' + player.vitality;
             }
         }
-
-            if(getEnemySpeed >= getPlayerSpeed){
+            // can have and >= to make it so player always win if speed if the same
+            else if(getEnemySpeed > getPlayerSpeed){
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
                 player.vitality = player.vitality - totalDamage;
                 alert("Enemy Hit for " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times!")
             
             if(player.vitality <= 0){
-                alert("You Lost")
+                alert("haha you lost")
                 getEnemyVitality.innerHTML = 'Health: ' + enemy.vitality;
         // this will make it so that when the player runs out of health and you lose, it won't show them with a negative number on their health bar (which could be kinda funny)
                 getPlayerVitality.innerHTML = 'Health: 0'
@@ -127,7 +129,7 @@ let getEnemyVitality = document.querySelector(".enemyVitality");
                 alert( "You hit you for " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times!")
         }    
             if(enemy.vitality <= 0){
-                alert("You Win")        
+                alert("Congrats! ^.^ refresh to play again")        
                 // this will make it so that when the player runs out of health and you lose
                 getEnemyVitality.innerHTML = 'Health: 0';
                 getPlayerVitality.innerHTML = 'Health: ' + player.vitality;
@@ -136,9 +138,9 @@ let getEnemyVitality = document.querySelector(".enemyVitality");
                 getEnemyVitality.innerHTML = 'Health: ' + enemy.vitality;
             }
         }
-    }
+    } // calcAttack function
 
-}    
+}  // playerMoves function  
 
 
 

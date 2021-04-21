@@ -1,5 +1,5 @@
 html {
-    font-family: 'Pacifico', cursive;
+    font-family: 'VT323', monospace;
     background: black;
     
 }
@@ -27,29 +27,43 @@ html {
     height: 5em;
 }
 
+/* .btnPrefight {
+    color: red;
+} */
+
 .characterImg {
-    height: 5em;
+    margin-top: 5em;
+    margin-right: 2.5em;
+    height: 10em;
     justify-content: center;
     align-content: center;
-    transform: translate(0em, 7em);
 }
 
 .enemyImg {
+    margin-top: 2.5em;
+    margin-right: 2.5em;
     height: 10em;
     justify-content: center;
-    transform: translate(0em, 4.5em);
 }
 
 a {
-    text-shadow: rgb(178, 196, 178) 1em;
+    font-size: 1.1em;
+    text-shadow: .3em .3em .35em rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-decoration: none;
     align-items: center;
     justify-content: center;
 } 
 
+header  {
+    font-size: 5em;
+}
 .fightHeader {
+    text-shadow: .1em .2em .35em rgba(255, 0, 200, 0.856);
     text-align: center;
+    font-size: 3em;
+    margin: 0em;
+    color: crimson;
 }
 
 h2 {
@@ -57,7 +71,6 @@ h2 {
 }
 
 h3 {
-    color: rgb(0, 0, 0);
     text-decoration: underline rgb(92, 3, 175);
 }
 
@@ -67,85 +80,151 @@ h3 {
 }
 
 .actions {
-    background: rgb(0, 0, 0);
+    font-size: 2em;
+    background: mediumorchid;
     text-align: center;
 }
 
 .playerClass {
+    text-shadow: .3em .3em .35em rgb(255, 255, 255);
+    font-size: 2.5em;
     text-align: center;
 }
 
 .findEnemyHeader {
+    text-shadow: .3em .3em .35em rgb(255, 255, 255);
+
     text-align: center;
 }
 
-.knight {
-    background: tomato;
-    border: .6em ridge rgb(228, 3, 3);
+
+
+.samurai {
+    text-align: center;
+    background: rgb(131, 130, 130);
+    border: .6em rgb(230, 0, 0);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-left-style: ridge;
+    border-right-style: ridge;
     width: 20%;
     margin: 5em 3em 5em 5em;
 }
 
-.priest {
-    background: white;
-    border: .6em ridge rgb(247, 247, 247);
+.muffins {
+    text-shadow: .3em .3em .35em rgb(255, 255, 255);
+
+    text-align: center;
+    background: rgb(0, 195, 255);
+    border: .6em ridge rgb(255, 0, 242);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-left-style: ridge;
+    border-right-style: ridge;
     width: 20%;
     margin: 5em 3em 5em 0em;
 }
 
-.hunter {
+.ranger {
+    text-align: center;
     background: yellowgreen;
     border: .6em ridge rgb(6, 161, 45);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-left-style: ridge;
+    border-right-style: ridge;
     width: 20%;
     margin: 5em 3em 5em 0em;
 }
 
-.wizard {
-    background: skyblue;
-    border: .6em ridge rgb(0, 174, 255);
+.sorcerer {
+    text-shadow: darkmagenta ;
+    text-align: center;
+    background: rgb(66, 66, 66);
+    border: .6em ridge rgb(114, 7, 163);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-left-style: ridge;
+    border-right-style: ridge;
     width: 20%;
     margin: 5em 3em 5em 0em;
 }
 
 .playerVitality {
+    font-size: 1.5em;
+    background: crimson;
+    border-top-style: double;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
+    padding: 0em;
 }
 
 .playerMana {
+    font-size: 1.5em;
+    background: skyblue;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .playerEnergy {
+    font-size: 1.5em;
+    background: yellow;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .playerStrength {
+    font-size: 1.5em;
+    background: orange;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .playerIntelligence {
+    font-size: 1.5em;
+    background: rgb(148, 2, 136);
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .playerAgility {
+    font-size: 1.5em;
+    background: rgb(255, 0, 242);
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .playerSpeed {
+    font-size: 1.5em;
+    background: rgb(0, 173, 43);
+    border-top-style: dotted;
+    border-bottom-style: double;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
@@ -156,47 +235,84 @@ h3 {
 } */
 
 .enemyType {
+    text-shadow: .3em .3em .35em rgb(255, 255, 255);
+    font-size: 2.5em;
     text-align: center;
 }
 
 .enemyVitality {
+    font-size: 1.5em;
+    background: crimson;
+    border-top-style: double;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .enemyMana {
+    font-size: 1.5em;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    background: skyblue;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .enemyEnergy {
+    font-size: 1.5em;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    background: yellow;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .enemyStrength {
+    font-size: 1.5em;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    background: orange;
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .enemyIntelligence {
+    font-size: 1.5em;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    background: rgb(148, 2, 136);
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .enemyAgility {
+    font-size: 1.5em;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    background: rgb(255, 0, 242);
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
 
 .enemySpeed {
+    font-size: 1.5em;
+    border-top-style: dotted;
+    border-bottom-style: double;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    background: rgb(0, 173, 43);
     text-align: center;
-    border: .1em solid black;
     margin: 0em;
 }
